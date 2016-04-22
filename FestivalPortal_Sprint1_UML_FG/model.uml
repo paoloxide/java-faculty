@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_tA-70DXeEeWIEsyFo8k_kA" name="NewModel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_hFdIizXfEeWIEsyFo8k_kA" name="registration.jsp"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_hFdIjDXfEeWIEsyFo8k_kA" name="VisitorController">
+    <ownedOperation xmi:id="_mlTJcDXsEeWIEsyFo8k_kA" name="Operation_1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_hFeWoDXfEeWIEsyFo8k_kA" name="VisitorServiceImpl">
+    <ownedOperation xmi:id="_M87ysDXtEeWIEsyFo8k_kA" name="Operation_1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_hFeWojXfEeWIEsyFo8k_kA" name="VisitorDAO">
+    <ownedOperation xmi:id="_ShdyQDXtEeWIEsyFo8k_kA" name="Operation_1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_InLssDXoEeWIEsyFo8k_kA" name="VisitorDAO">
+    <ownedAttribute xmi:id="_McslsDXoEeWIEsyFo8k_kA" name="Log"/>
+    <ownedAttribute xmi:id="_Nms6sDXoEeWIEsyFo8k_kA" name="EntityManager"/>
+    <ownedOperation xmi:id="_QPZbQDXoEeWIEsyFo8k_kA" name="insertData">
+      <ownedParameter xmi:id="_SKYhQDXoEeWIEsyFo8k_kA" name="Visitor"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ULVFUDXoEeWIEsyFo8k_kA" name="searchUser">
+      <ownedParameter xmi:id="_wdQC0DXoEeWIEsyFo8k_kA" name="String"/>
+      <ownedParameter xmi:id="_5rsvYDXoEeWIEsyFo8k_kA" name="string"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_WjX6wDXoEeWIEsyFo8k_kA" name="registerVisitorToEvent">
+      <ownedParameter xmi:id="_OT53kDXrEeWIEsyFo8k_kA" name="Visitor"/>
+      <ownedParameter xmi:id="_Px8i4DXrEeWIEsyFo8k_kA" name="int"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_YJuNgDXoEeWIEsyFo8k_kA" name="registeredEvents">
+      <ownedParameter xmi:id="_SgaUQDXrEeWIEsyFo8k_kA" name="Visitor"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Zn_iUDXoEeWIEsyFo8k_kA" name="updateVisitor">
+      <ownedParameter xmi:id="_XqsAwDXrEeWIEsyFo8k_kA" name="Visitor"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bRQmMDXoEeWIEsyFo8k_kA" name="changePassword">
+      <ownedParameter xmi:id="_ZohmcDXrEeWIEsyFo8k_kA" name="Visitor"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_c_7ugDXoEeWIEsyFo8k_kA" name="matchWithOldPwd" visibility="private">
+      <ownedParameter xmi:id="_bbO6MDXrEeWIEsyFo8k_kA" name="Visitor"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_e2WdkDXoEeWIEsyFo8k_kA" name="unregisterEvent">
+      <ownedParameter xmi:id="_iWliwDXrEeWIEsyFo8k_kA" name="Visitor"/>
+      <ownedParameter xmi:id="_jwbqkDXrEeWIEsyFo8k_kA" name="int"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_gggSQDXoEeWIEsyFo8k_kA" name="searchVisitor">
+      <ownedParameter xmi:id="_l0zWEDXrEeWIEsyFo8k_kA" name="String"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_t3ezEDXrEeWIEsyFo8k_kA" name="Scenario_0">
+    <ownedAttribute xmi:id="_MwWksDXsEeWIEsyFo8k_kA" name="registration.jsp" type="_hFdIizXfEeWIEsyFo8k_kA"/>
+    <ownedAttribute xmi:id="_Xv1KADXsEeWIEsyFo8k_kA" name="VisitorController" type="_hFdIjDXfEeWIEsyFo8k_kA"/>
+    <ownedAttribute xmi:id="_bT1cQDXsEeWIEsyFo8k_kA" name="VisitorServiceImpl" type="_hFeWoDXfEeWIEsyFo8k_kA"/>
+    <ownedAttribute xmi:id="_fYC4kDXsEeWIEsyFo8k_kA" name="VisitorDAO" type="_hFeWojXfEeWIEsyFo8k_kA"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mlZQEDXsEeWIEsyFo8k_kA" name="onSubmit"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_M9E8oDXtEeWIEsyFo8k_kA" name="newVisitor(request, response)"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Shg1kTXtEeWIEsyFo8k_kA" name="createVisitor(visitor)"/>
+    <lifeline xmi:id="_MwYZ4DXsEeWIEsyFo8k_kA" name="registration.jsp" represents="_MwWksDXsEeWIEsyFo8k_kA" coveredBy="_mldhgDXsEeWIEsyFo8k_kA _mlfWsjXsEeWIEsyFo8k_kA"/>
+    <lifeline xmi:id="_Xv1KATXsEeWIEsyFo8k_kA" name="VisitorController" represents="_Xv1KADXsEeWIEsyFo8k_kA" coveredBy="_mldhgTXsEeWIEsyFo8k_kA _mlfWsTXsEeWIEsyFo8k_kA _mlfWsDXsEeWIEsyFo8k_kA _M9GKwTXtEeWIEsyFo8k_kA _M9H_8jXtEeWIEsyFo8k_kA"/>
+    <lifeline xmi:id="_bT1cQTXsEeWIEsyFo8k_kA" name="VisitorServiceImpl" represents="_bT1cQDXsEeWIEsyFo8k_kA" coveredBy="_M9GKwjXtEeWIEsyFo8k_kA _M9H_8TXtEeWIEsyFo8k_kA _M9H_8DXtEeWIEsyFo8k_kA _ShiqwTXtEeWIEsyFo8k_kA _Shj44jXtEeWIEsyFo8k_kA"/>
+    <lifeline xmi:id="_fYC4kTXsEeWIEsyFo8k_kA" name="VisitorDAO" represents="_fYC4kDXsEeWIEsyFo8k_kA" coveredBy="_ShiqwjXtEeWIEsyFo8k_kA _Shj44TXtEeWIEsyFo8k_kA _Shj44DXtEeWIEsyFo8k_kA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mldhgDXsEeWIEsyFo8k_kA" name="onSubmit_sender" covered="_MwYZ4DXsEeWIEsyFo8k_kA" message="_mlXa4DXsEeWIEsyFo8k_kA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mldhgTXsEeWIEsyFo8k_kA" name="onSubmit_receiver" covered="_Xv1KATXsEeWIEsyFo8k_kA" message="_mlXa4DXsEeWIEsyFo8k_kA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_mlfWsTXsEeWIEsyFo8k_kA" name="onSubmit" covered="_Xv1KATXsEeWIEsyFo8k_kA" finish="_mlfWsDXsEeWIEsyFo8k_kA" start="_mldhgTXsEeWIEsyFo8k_kA" behavior="_mlZQEDXsEeWIEsyFo8k_kA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_M9GKwTXtEeWIEsyFo8k_kA" name="newVisitor(request, response)_sender" covered="_Xv1KATXsEeWIEsyFo8k_kA" message="_M9DHcDXtEeWIEsyFo8k_kA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_M9GKwjXtEeWIEsyFo8k_kA" name="newVisitor(request, response)_receiver" covered="_bT1cQTXsEeWIEsyFo8k_kA" message="_M9DHcDXtEeWIEsyFo8k_kA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_M9H_8TXtEeWIEsyFo8k_kA" name="newVisitor(request, response)" covered="_bT1cQTXsEeWIEsyFo8k_kA" finish="_M9H_8DXtEeWIEsyFo8k_kA" start="_M9GKwjXtEeWIEsyFo8k_kA" behavior="_M9E8oDXtEeWIEsyFo8k_kA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ShiqwTXtEeWIEsyFo8k_kA" name="createVisitor(visitor)_sender" covered="_bT1cQTXsEeWIEsyFo8k_kA" message="_Shg1kDXtEeWIEsyFo8k_kA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ShiqwjXtEeWIEsyFo8k_kA" name="createVisitor(visitor)_receiver" covered="_fYC4kTXsEeWIEsyFo8k_kA" message="_Shg1kDXtEeWIEsyFo8k_kA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Shj44TXtEeWIEsyFo8k_kA" name="createVisitor(visitor)" covered="_fYC4kTXsEeWIEsyFo8k_kA" finish="_Shj44DXtEeWIEsyFo8k_kA" start="_ShiqwjXtEeWIEsyFo8k_kA" behavior="_Shg1kTXtEeWIEsyFo8k_kA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Shj44DXtEeWIEsyFo8k_kA" name="Record Inserted_sender" covered="_fYC4kTXsEeWIEsyFo8k_kA" message="_ShiqwDXtEeWIEsyFo8k_kA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Shj44jXtEeWIEsyFo8k_kA" name="Record Inserted_receiver" covered="_bT1cQTXsEeWIEsyFo8k_kA" message="_ShiqwDXtEeWIEsyFo8k_kA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_M9H_8DXtEeWIEsyFo8k_kA" name="Registration Succesfull_sender" covered="_bT1cQTXsEeWIEsyFo8k_kA" message="_M9GKwDXtEeWIEsyFo8k_kA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_M9H_8jXtEeWIEsyFo8k_kA" name="Registration Succesfull_receiver" covered="_Xv1KATXsEeWIEsyFo8k_kA" message="_M9GKwDXtEeWIEsyFo8k_kA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mlfWsDXsEeWIEsyFo8k_kA" name="onSubmit_finish" covered="_Xv1KATXsEeWIEsyFo8k_kA" message="_mlcTYDXsEeWIEsyFo8k_kA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mlfWsjXsEeWIEsyFo8k_kA" name="Visitor Registered_receiver" covered="_MwYZ4DXsEeWIEsyFo8k_kA" message="_mlcTYDXsEeWIEsyFo8k_kA"/>
+    <message xmi:id="_mlXa4DXsEeWIEsyFo8k_kA" name="onSubmit" receiveEvent="_mldhgTXsEeWIEsyFo8k_kA" sendEvent="_mldhgDXsEeWIEsyFo8k_kA" signature="_mlTJcDXsEeWIEsyFo8k_kA"/>
+    <message xmi:id="_mlcTYDXsEeWIEsyFo8k_kA" name="Visitor Registered" messageSort="reply" receiveEvent="_mlfWsjXsEeWIEsyFo8k_kA" sendEvent="_mlfWsDXsEeWIEsyFo8k_kA"/>
+    <message xmi:id="_M9DHcDXtEeWIEsyFo8k_kA" name="newVisitor(request, response)" receiveEvent="_M9GKwjXtEeWIEsyFo8k_kA" sendEvent="_M9GKwTXtEeWIEsyFo8k_kA" signature="_M87ysDXtEeWIEsyFo8k_kA"/>
+    <message xmi:id="_M9GKwDXtEeWIEsyFo8k_kA" name="Registration Succesfull" messageSort="reply" receiveEvent="_M9H_8jXtEeWIEsyFo8k_kA" sendEvent="_M9H_8DXtEeWIEsyFo8k_kA"/>
+    <message xmi:id="_Shg1kDXtEeWIEsyFo8k_kA" name="createVisitor(visitor)" receiveEvent="_ShiqwjXtEeWIEsyFo8k_kA" sendEvent="_ShiqwTXtEeWIEsyFo8k_kA" signature="_ShdyQDXtEeWIEsyFo8k_kA"/>
+    <message xmi:id="_ShiqwDXtEeWIEsyFo8k_kA" name="Record Inserted" messageSort="reply" receiveEvent="_Shj44jXtEeWIEsyFo8k_kA" sendEvent="_Shj44DXtEeWIEsyFo8k_kA"/>
+  </packagedElement>
+</uml:Model>
